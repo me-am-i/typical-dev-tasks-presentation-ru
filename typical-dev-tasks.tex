@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage{cite,enumerate,float,indentfirst}
+\usepackage{graphicx}
+\usepackage{verbatim}
 \usepackage{listings}
 \lstset{language=Python}
 \usetheme{umbc2}
@@ -14,6 +16,14 @@
 \begin{document}
 
 \maketitle
+
+\begin{frame}{Методологии разработки}
+\begin{itemize}
+\item ООП
+\pause
+\item Функциональный стиль
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Конфигурирование}
 \begin{itemize}
@@ -26,21 +36,121 @@
 \end{frame}
 
 \begin{frame}{Пример YAML конфига}
-\lstinputlisting{examples/conf.yml}
+\verbatiminput{examples/conf.yml}
+%\lstinputlisting{examples/conf.yml}
 \end{frame}
 
-\begin{frame}{Вопросы}
+\begin{frame}{Журналирование}
+\begin{itemize}
+\item Зачем?
+\pause
+\item Что? (Уровни)
+\pause
+\item Куда? (БД или файлы)
+\end{itemize}
+\end{frame}
 
-\begin{center}
-\LARGE QUESTIONS?
-\end{center}
+\begin{frame}{Профилирование}
+\begin{itemize}
+\item Зачем?
+\pause
+\item Инструменты.
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Протоколы интеграции и маршалинг}
+\begin{itemize}
+\item Интеграция: файлы, базы, очереди, вызов процедур
+\pause
+\item Вызовы процедур: SOAP, XML::RPC, JSON::RPC, в какой-то мере REST
+\pause
+\item Сериализация/Маршалинг: JSON, YAML
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Хранилища данных}
+\begin{itemize}
+\item РСУБД (PostgreSQL)
+\pause
+\item Ключ-значение (Redis, Memcached, Riak)
+\pause
+\item Документоориентированные (mongoDB)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Технологии параллелизма}
+\begin{itemize}
+\item process
+\pause
+\item thread
+\pause
+\item event loop
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Масштабирование ПО}
+\begin{itemize}
+\item Один в поле не воин
+\pause
+\item Как распределить запросы (с сессиями и без них)
+\pause
+\item Репликация. Партицирование
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Сложность алгоритмов}
+\begin{itemize}
+\item Временная сложность алгоритма (в худшем случае)
+\begin{itemize}
+\item $O(log \: n)$ - бинарный поиск по отсортированному массиву
+\item $O(n)$ - поиск в одномерном массиве полным перебором
+\item $O(n^2)$ - поиск в двумерном массиве полным перебором, многие виды сортировок
+\item $O(c^n)$ - решение задачи коммивояжёра методами динамического программирования
+\item $O(n!)$ - решение задачи коммивояжёра полным перебором
+\end{itemize}
+\pause
+\item В лучшем и средних случаях
+\pause
+\item Пространственная сложность - по раходу памяти
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Оптимизация}
+\begin{itemize}
+\item Всему своё время
+\pause
+\item Компилятор умный
+\pause
+\item Узкие места на нужном языке
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Установка ПО}
+\begin{itemize}
+\item Версии
+\pause
+\item Зависимости
+\pause
+\item Откат
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Локализация и интернационализация (технологии и подходы)}
+\begin{itemize}
+\item Интернационализация - чтоб могло (utf8, gettext, .po файлы и инструменты для них)
+\pause
+\item Локализация - для конкретной страны (перевод, форматы дат, денег)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Вопросы?}
 \begin{block}{Исходники презентации (LaTeX, Beamer):}
 https://github.com/worldmind/typical-dev-tasks-presentation-ru.git
+\begin{center}
+\includegraphics{qr-git-url.png}
+\end{center}
 \end{block}
-
-\begin{block}{Feedback to:}
-ashrub@yandex.ru
+\begin{block}{Feedback to: ashrub@yandex.ru}
 \end{block}
 
 \end{frame}
