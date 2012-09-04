@@ -1,0 +1,49 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{cite,enumerate,float,indentfirst}
+\usepackage{listings}
+\lstset{language=Python}
+\usetheme{umbc2}
+
+\title{Типовые задачи в разработке ПО и их решения}
+\author{Alexey Shrub}
+\date{2012-09-13}
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Конфигурирование}
+\begin{itemize}
+\item Зачем?
+\pause
+\item Файлы или база?
+\pause
+\item Форматы файлов и библиотеки.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Пример YAML конфига}
+\lstinputlisting{examples/conf.yml}
+\end{frame}
+
+\begin{frame}{Вопросы}
+
+\begin{center}
+\LARGE QUESTIONS?
+\end{center}
+
+\begin{block}{Исходники презентации (LaTeX, Beamer):}
+https://github.com/worldmind/typical-dev-tasks-presentation-ru.git
+\end{block}
+
+\begin{block}{Feedback to:}
+ashrub@yandex.ru
+\end{block}
+
+\end{frame}
+
+\end {document}
+
