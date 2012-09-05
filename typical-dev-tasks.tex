@@ -5,9 +5,6 @@
 \usepackage[english,russian]{babel}
 \usepackage{cite,enumerate,float,indentfirst}
 \usepackage{graphicx}
-\usepackage{verbatim}
-\usepackage{listings}
-\lstset{language=Python}
 \usetheme{umbc2}
 
 \title{Типовые задачи в разработке ПО и их решения}
@@ -25,6 +22,16 @@
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Coding conventions}
+\begin{itemize}
+\item Код для человека
+\pause
+\item Именование, отступы
+\pause
+\item  Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. — Martin Golding
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Конфигурирование}
 \begin{itemize}
 \item Зачем?
@@ -33,11 +40,6 @@
 \pause
 \item Форматы файлов и библиотеки.
 \end{itemize}
-\end{frame}
-
-\begin{frame}{Пример YAML конфига}
-\verbatiminput{examples/conf.yml}
-%\lstinputlisting{examples/conf.yml}
 \end{frame}
 
 \begin{frame}{Журналирование}
@@ -95,6 +97,14 @@
 \item Как распределить запросы (с сессиями и без них)
 \pause
 \item Репликация. Партицирование
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Простота и сложность}
+\begin{itemize}
+\item Отладка кода вдвое сложнее, чем его написание. Так что если вы пишете код настолько умно, насколько можете, то вы по определению недостаточно сообразительны, чтобы его отлаживать. — Brian W. Kernighan.
+\pause
+\item Unix-way
 \end{itemize}
 \end{frame}
 
@@ -167,6 +177,14 @@
 \pause
 \item "Регулярные выражения" Джеффри Фридл
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Что ещё?}
+"I belive that you can never be a good programmer if you know only the syntax of the language but not how the compilation or run-time enviroment is implemented. For example, ... a Java programmer should know why a thread may never get control in a uniprocessor setup even if it is not blocked."
+
+"I am of the opinion that an application developer should master at least the following six major areas: user interfaces, persistance, interprocess communication and networking, parsing and code generation, the Web, and the operating system"
+
+Sriram Srinivasan "Advanced Perl Programming"
 \end{frame}
 
 \begin{frame}{Вопросы?}
