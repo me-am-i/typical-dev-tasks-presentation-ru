@@ -15,11 +15,21 @@ Presentation about typical programmers tasks for students (RU)
 
 6. Установка ПО. Локализация и интернационализация (технологии и подходы).
 
-For complile you need (on Ubuntu)
-- install texlive-full from repository
+For complile to PDF you need (on Debian/Ubuntu)
+- install texlive-full from repository:
+sudo aptitude install texlive-full
 
-- manually install Beamer theme UMBC 3
+- install beamerthemeumbc.deb from this repository
+sudo dpkg -i beamerthemeumbc.deb
+
+or manually install Beamer theme UMBC 3
 http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-8.html
+http://code.google.com/p/latexslides/source/browse/trunk/styles/math.umbc.edu-beamer/?r=26
 
-- run: sudo texhash
+- run:
+sudo texhash
 
+-run:
+pdflatex typical-dev-tasks.tex
+
+may be two times
